@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outubro Rosa</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ff7dda; /* Fundo rosa */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Estilos do banner */
+        .banner {
+            width: 100%;
+            aspect-ratio: 9 / 16;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            background-color: #ffd5f1;
+            background-image: url('https://www.anamid.com.br/wp-content/uploads/2023/10/Blog-AnaMid-artigo-Outubro-Rosa.jpg'); /* Adicione o caminho da sua imagem aqui */
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s, filter 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner:hover {
+            transform: translateY(-10px); /* Efeito de relevo ao passar o mouse */
+            filter: brightness(0.9) saturate(1.5) hue-rotate(320deg); /* Filtro rosa */
+        }
+
+        /* Banner menor */
+        .banner-small {
+            width: 80%;
+            aspect-ratio: 9 / 16;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            background-image: url('https://pm.es.gov.br/Media/PMES/Noticias/WhatsApp%20Image%202023-10-11%20at%2014.41.00.jpeg'); /* Caminho da segunda imagem */
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s, filter 0.3s;
+            position: relative;
+            overflow: hidden;
+            margin-top: 20px; /* Espaço entre o texto e o segundo banner */
+        }
+
+        .banner-small:hover {
+            transform: translateY(-10px);
+            filter: brightness(0.9) saturate(1.5) hue-rotate(320deg);
+        }
+
+        /* Título e texto */
+        .content {
+            text-align: center;
+            margin-top: 20px;
+            color: #000;
+        }
+
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+            font-family: 'Copperplate', serif;
+            transition: transform 0.2s;
+        }
+
+        .title:hover {
+            transform: translateY(-5px); /* Leve salto no título ao passar o mouse */
+        }
+
+        .text {
+            font-size: 1.2em;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Banner Principal -->
+    <div class="banner"></div>
+
+    <!-- Conteúdo: título e texto -->
+    <div class="content">
+        <h1 class="title">Outubro Rosa</h1>
+        <p class="text">
+            O Outubro Rosa é um movimento mundial de conscientização para o controle do câncer de mama.
+            A campanha acontece anualmente com o objetivo de compartilhar informações, promover a conscientização
+            sobre a doença e proporcionar maior acesso aos serviços de diagnóstico e de tratamento.
+        </p>
+    </div>
+
+    <!-- Segundo Banner Menor -->
+    <div class="banner-small"></div>
+
+</body>
+</html>
